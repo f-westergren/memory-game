@@ -1,0 +1,76 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 75px);
+    grid-template-rows: repeat(8, 75px);
+    grid-gap: 10px;
+    max-width: 0 auto;
+    grid-auto-rows: 75px;
+    margin: 0 auto;
+    justify-content: center;
+    transform-style: preserve-3d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all .4s linear;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.counter {
+  font-size: 3em;
+  margin: auto;
+}
+
+.counter-text {
+  font-size: 1.8em;
+  text-align: center;
+  margin: auto;
+}
+
+#guesses {
+  grid-column-start: 1;
+  grid-row-start: 6;
+  grid-column-end: 3; 
+}
+
+#matches {
+  grid-column-start: 3;
+  grid-row-start: 6;
+  grid-column-end: 5; 
+}
+
+#highscore {
+  grid-column-start: 5;
+  grid-row-start: 6;
+  grid-column-end: 7; 
+}
+
+.title {
+  margin: 20px auto 30px auto;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;  
+}
+
+#attribute {
+  grid-column-start: 1;
+  grid-row-start: 8;
+  grid-column-end: 7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+#finished {
+  grid-column-start: 1;
+  grid-row-start: 7;
+  grid-column-end: 7;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;  
+}
